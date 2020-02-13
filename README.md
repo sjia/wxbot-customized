@@ -1,21 +1,17 @@
+==New:
+1. Enabled console_qr=True to enable it run on server 
+2. Enable the auto-reply to specific my_friend only. (robot.py)
+3. Add new tuling_api_key key from tuling robot. 
+
+==Original source
 # wxrobot
-基于python的微信机器人，猪哥开发环境Macos+Python3.7+Pycharm
-
-欢迎大家在我公众号：`裸睡的猪`中给我提出建议和意见
-
-新增群直播机器人，在live分支上！
-
-![裸睡的猪](https://img-blog.csdnimg.cn/20181217213155258.gif)
 
 ## 一、启动步骤
 1.下载wxpy库 `pip3 install -U wxpy -i "https://pypi.doubanio.com/simple/"`，使用的是国内源，如果使用anaconda直接在pycharm里面下载，注意项目环境问题！
 
 2.启动`robot.py`，弹出登录二维码，手机微信扫一扫登录
 
-3.邀请好友尽情调戏，新增群聊天和管理员功能.
-
 4.在robot.py中修改了bot = Bot(cache_path=True, console_qr=True)，console_qr=True表示在控制台打印二维码显示，方便部署到服务器，如果你不需要部署服务器可去掉这个入参
-
 
 ## 二、功能介绍
 
