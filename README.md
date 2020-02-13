@@ -1,7 +1,8 @@
 ==New:
 1. Enabled console_qr=True to enable it run on server 
-2. Enable the auto-reply to specific my_friend only. (robot.py)
-3. Add new tuling_api_key key from tuling robot. 
+2. Add function for reply to specific my_friend only. (robot.py)
+3. Add new API key from tuling robot. 
+
 
 ==Original source
 # wxrobot
