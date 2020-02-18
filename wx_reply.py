@@ -1,3 +1,4 @@
+#coding=utf-8
 # 好友功能
 import re
 
