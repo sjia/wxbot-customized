@@ -1,8 +1,6 @@
 What I added:
 1. Enabled console_qr=True to enable it run on server 
-2. Add function for reply to specific my_friend only. (robot.py)
-3. Add new API key from tuling robot. 
-
+2. Add function for reply to friends with keyword 'enable' in the alias only. (robot.py)
 
 
 

@@ -8,7 +8,7 @@ logger = logging.getLogger('itchat')
 
 def load_config_to_bot(bot):
     """加载配置项"""
-    bot_status = '机器人登录成功！！！'
+    bot_status = 'Logon success！！！'
     # 未定义机器人管理员
     if not config.bot_master_name:
         bot.master = bot.file_helper

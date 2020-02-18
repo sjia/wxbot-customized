@@ -6,7 +6,7 @@ tuling_api_key = '88f17f853d974387af64955bed9466f4'
 
 # 自动回复
 is_friend_auto_reply = True  # 好友自动回复
-is_group_reply = True  # 此项表示群中是否回复
+is_group_reply = False  # 此项表示群中是否回复
 is_group_at_reply = True  # 上一项开启后此项才生效
 is_forward_revoke_msg = True  # 开启防撤回模式
 is_forward_group_at_msg = False  # 转发群@我的消息
