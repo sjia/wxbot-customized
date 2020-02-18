@@ -35,7 +35,7 @@ def friend_msg(msg):
 @bot.register(chats=Group)
 def group_msg(msg):
     if msg.is_at and msg.bot.is_forward_group_at_msg:
-        msg.forward(msg.bot.master, prefix='「{0}」在群「{1}」中艾特了你：'.format(msg.member.name, msg.chat.name))
+        msg.forward(msg.bot.master, prefix='{0} @ you in {1}：'.format(msg.member.name, msg.chat.name))
 
     if msg.type == TEXT:
         if msg.bot.is_group_reply:
@@ -45,11 +45,11 @@ def group_msg(msg):
             else:
                 wx_reply.auto_reply(msg)
     elif msg.type == SHARING and msg.bot.is_listen_sharing and msg.chat in msg.bot.listen_sharing_groups:
-        msg.forward(msg.bot.master, prefix='分享监控：「{0}」在「{1}」分享了：'.format(msg.member.name, msg.chat.name))
+        msg.forward(msg.bot.master, prefix='Sharing listener：{1} shared in {0}:'.format(msg.member.name, msg.chat.name))
     else:
         pass
     if msg.bot.is_listen_friend and msg.chat in msg.bot.listen_friend_groups and msg.member.is_friend in msg.bot.listen_friends:
-        msg.forward(msg.bot.master, prefix='监听指定好友群消息：「{0}」在「{1}」发了消息：'.format(msg.member.is_friend.remark_name or msg.member.nick_name, msg.chat.name))
+        msg.forward(msg.bot.master, prefix='Listen specific friend：{0} send msg in {1}：'.format(msg.member.is_friend.remark_name or msg.member.nick_name, msg.chat.name))
     return None
 
 

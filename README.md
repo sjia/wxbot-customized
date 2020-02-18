@@ -6,5 +6,5 @@ What I added:
 
 Source: https://github.com/pig6/wxrobot
 
-Ref source:  [wxpy官方文档](https://wxpy.readthedocs.io/zh/latest/)
+Ref source:  [wxpy](https://wxpy.readthedocs.io/zh/latest/)
 
