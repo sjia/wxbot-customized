@@ -6,8 +6,8 @@ import wx_command
 import load
 
 
-bot = Bot(cache_path=True)
-# bot = Bot(cache_path=True, console_qr=True)
+#bot = Bot(cache_path=True)
+bot = Bot(cache_path=True, console_qr=True)
 load.load_config_to_bot(bot)
 
 
